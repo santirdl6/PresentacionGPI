@@ -146,13 +146,13 @@
 
   /* Matrix */
   .matrix { display: grid; grid-template-columns: 100px repeat(3, 1fr); grid-template-rows: 60px repeat(3, 1fr); gap: 8px; height: 600px; }
-  .matrix .axis { display:flex; align-items:center; justify-content:center; font-size: 14px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color: var(--slate); }
-  .matrix .cell { background: var(--paper-deep); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .matrix .axis { display:flex; align-items:center; justify-content:center; font-size: 17px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color: var(--slate); }
+  .matrix .cell { background: var(--paper-deep); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 8px; }
   .matrix .cell.lo { background: var(--lime-soft); }
   .matrix .cell.md { background: var(--amber-soft); }
   .matrix .cell.hi { background: var(--alert-soft); }
-  .matrix .cell .id { font-family: var(--font-mono); font-size: 13px; font-weight:700; color: var(--brand); }
-  .matrix .cell .name { font-size: 15px; font-weight: 500; line-height: 1.3; }
+  .matrix .cell .id { font-family: var(--font-mono); font-size: 16px; font-weight:700; color: var(--brand); }
+  .matrix .cell .name { font-size: 18px; font-weight: 500; line-height: 1.3; }
 
   /* Plan placeholder */
   .placeholder {
@@ -530,7 +530,7 @@
     font-size: 44px; letter-spacing: -.03em; line-height: 1;
     color: var(--brand); font-variant-numeric: tabular-nums;
   }
-  .plan-kpi .kpi-label { font-size: 16px; color: var(--slate); font-weight: 500; }
+  .plan-kpi .kpi-label { font-size: 19px; color: var(--slate); font-weight: 500; }
 
   .phase-card {
     background: #fff; border-radius: 16px; padding: 24px;
@@ -551,13 +551,13 @@
     font-family: var(--font-mono); font-size: 13px; color: var(--gold-deep); font-weight: 600;
   }
   .phase-card .phase-tasks {
-    font-size: 13px; line-height: 1.5; color: var(--slate); margin-top: 2px;
+    font-size: 16px; line-height: 1.55; color: var(--slate); margin-top: 2px;
   }
 
   .note-box {
     background: var(--gold-soft); color: var(--ink);
     padding: 16px 22px; border-radius: 12px;
-    font-size: 15px; line-height: 1.5; font-style: italic;
+    font-size: 18px; line-height: 1.5; font-style: italic;
   }
   .note-box.brand-bg {
     background: var(--brand); color: #fff; font-style: normal;
@@ -565,8 +565,8 @@
 
   .levels-row { display: flex; align-items: stretch; gap: 0; }
   .level-card {
-    flex: 1; padding: 32px 28px; border-radius: 18px;
-    display: flex; flex-direction: column; gap: 12px;
+    flex: 1; padding: 20px 22px; border-radius: 18px;
+    display: flex; flex-direction: column; gap: 7px;
   }
   .level-card.paper-bg { background: var(--paper-deep); border: 1px solid var(--paper-line); }
   .level-card.navy-bg { background: var(--brand); color: #fff; }
@@ -585,12 +585,12 @@
   .level-card.navy-bg .level-num { color: #fff; }
   .level-card.gold-bg .level-num { color: var(--brand); }
   .level-card .level-detail {
-    font-size: 15px; line-height: 1.5; display: flex; flex-direction: column; gap: 5px;
+    font-size: 18px; line-height: 1.5; display: flex; flex-direction: column; gap: 5px;
   }
   .level-card.navy-bg .level-detail { color: rgba(255,255,255,.78); }
   .level-card.gold-bg .level-detail { color: var(--brand-deep); }
   .level-card .level-desc {
-    font-size: 13px; line-height: 1.45; margin-top: auto; padding-top: 12px;
+    font-size: 16px; line-height: 1.45; margin-top: auto; padding-top: 12px;
     border-top: 1px solid rgba(128,128,128,.2); font-style: italic;
   }
   .level-arrow {
@@ -624,12 +624,12 @@
   .timeline-mark.deadline .date { color: var(--alert); font-weight: 700; }
 
   .compare-grid {
-    display: grid; grid-template-columns: 1fr 80px 1fr; gap: 0;
-    align-items: stretch; margin-top: 50px; height: 580px;
+    display: grid; grid-template-columns: 1fr 130px 1fr; gap: 0;
+    align-items: stretch; margin-top: 28px; height: 460px;
   }
   .compare-panel {
-    border-radius: 24px; padding: 44px 40px;
-    display: flex; flex-direction: column; gap: 22px;
+    border-radius: 24px; padding: 28px 32px;
+    display: flex; flex-direction: column; gap: 14px;
   }
   .compare-panel.light { background: #fff; border: 1px solid var(--line); }
   .compare-panel.navy { background: var(--brand); color: #fff; }
@@ -637,7 +637,7 @@
     font-family: var(--font-display); font-weight: 700;
     font-size: 34px; letter-spacing: -.02em;
   }
-  .compare-panel .cp-items { display: flex; flex-direction: column; gap: 20px; flex: 1; }
+  .compare-panel .cp-items { display: flex; flex-direction: column; gap: 12px; flex: 1; }
   .compare-panel .cp-item {
     font-size: 22px; line-height: 1.4; padding-left: 28px; position: relative;
   }
@@ -668,9 +668,9 @@
     font-family: var(--font-mono); font-size: 14px; font-weight: 600;
     color: var(--brand); text-align: right;
   }
-  .task-item .task-name { font-size: 18px; color: var(--ink); line-height: 1.3; }
+  .task-item .task-name { font-size: 21px; color: var(--ink); line-height: 1.3; }
   .task-item .task-dur {
-    font-family: var(--font-mono); font-size: 14px; font-weight: 600;
+    font-family: var(--font-mono); font-size: 17px; font-weight: 600;
     color: var(--gold-deep); text-align: right;
   }
 
@@ -681,10 +681,10 @@
   .milestone-box .ms-icon { font-size: 32px; flex-shrink: 0; }
   .milestone-box .ms-title {
     font-family: var(--font-display); font-weight: 700;
-    font-size: 20px; letter-spacing: -.01em;
+    font-size: 23px; letter-spacing: -.01em;
   }
   .milestone-box .ms-gold { color: var(--gold); }
-  .milestone-box .ms-desc { font-size: 16px; color: rgba(255,255,255,.78); margin-top: 4px; }
+  .milestone-box .ms-desc { font-size: 19px; color: rgba(255,255,255,.78); margin-top: 4px; }
 
   .deadline-box {
     background: var(--gold); color: var(--ink); border-radius: 16px;
@@ -1264,39 +1264,39 @@
   <p class="lead anim" style="--d:300ms; margin-top: 10px;">Marco de clasificación del documento de planificación. Identificamos riesgos en cada categoría y priorizamos por probabilidad × impacto.</p>
   <div class="grid-3" style="margin-top: 28px;">
     <div class="card anim" style="--d:360ms;">
-      <div class="card-eyebrow"><span class="mono">T</span> · Tecnología</div>
+      <div class="card-eyebrow"><span class="mono">T</span> · Tecnología <span style="font-size:16px; margin-left:4px;">🛡️</span></div>
       <div class="card-title">Arquitectura, seguridad y datos</div>
       <div class="card-foot">Seguridad de datos fiscales, permisos, cálculos económicos, backups y escalabilidad del sistema.</div>
     </div>
     <div class="card anim" style="--d:420ms;">
-      <div class="card-eyebrow"><span class="mono">P</span> · Personas</div>
+      <div class="card-eyebrow"><span class="mono">P</span> · Personas <span style="font-size:16px; margin-left:4px;">👥</span></div>
       <div class="card-title">Equipo y conocimiento</div>
       <div class="card-foot">Bajas, dominio fiscal insuficiente, curva de aprendizaje, desequilibrio de carga y concentración del conocimiento crítico.</div>
     </div>
     <div class="card anim" style="--d:480ms;">
-      <div class="card-eyebrow"><span class="mono">H</span> · Herramientas</div>
+      <div class="card-eyebrow"><span class="mono">H</span> · Herramientas <span style="font-size:16px; margin-left:4px;">🤖</span></div>
       <div class="card-title">IA, CI/CD y servicios</div>
       <div class="card-foot">Código inseguro generado por IA, dependencia excesiva, conflictos de versiones, logs de auditoría y certificados SSL.</div>
     </div>
     <div class="card anim" style="--d:540ms;">
-      <div class="card-eyebrow"><span class="mono">O</span> · Organización</div>
+      <div class="card-eyebrow"><span class="mono">O</span> · Organización <span style="font-size:16px; margin-left:4px;">📋</span></div>
       <div class="card-title">Proceso y calendario</div>
       <div class="card-foot">Ausencia de normas, inexperiencia en gestión, falta de metodología y conflictos con otras asignaturas.</div>
     </div>
     <div class="card anim" style="--d:600ms;">
-      <div class="card-eyebrow"><span class="mono">R</span> · Requerimientos</div>
+      <div class="card-eyebrow"><span class="mono">R</span> · Requerimientos <span style="font-size:16px; margin-left:4px;">📐</span></div>
       <div class="card-title">Alcance y normativa</div>
       <div class="card-foot">Alineación con creadores reales, requerimientos ambiguos, cambios VERIFACTU/RGPD y dependencias externas.</div>
     </div>
     <div class="card anim" style="--d:660ms;">
-      <div class="card-eyebrow"><span class="mono">E</span> · Estimación</div>
+      <div class="card-eyebrow"><span class="mono">E</span> · Estimación <span style="font-size:16px; margin-left:4px;">📊</span></div>
       <div class="card-title">Esfuerzo y productividad</div>
       <div class="card-foot">Subestimación del dominio fiscal, divergencia entre técnicas, productividad junior y holgura insuficiente.</div>
     </div>
   </div>
   <div class="card brand anim" style="--d:720ms; margin-top: 14px; display: flex; align-items: center; gap: 28px; padding: 14px 22px;">
     <div style="flex-shrink: 0; min-width: 180px;">
-      <div class="card-eyebrow" style="color: rgba(255,255,255,.6);"><span class="mono">OT</span> · Otros</div>
+      <div class="card-eyebrow" style="color: rgba(255,255,255,.6);"><span class="mono">OT</span> · Otros <span style="font-size:16px; margin-left:4px;">⚡</span></div>
       <div style="font-weight: 700; font-size: 17px; color: #fff; margin-top: 4px;">Externos e imprevistos</div>
     </div>
     <div style="color: rgba(255,255,255,.75); font-size: 13.5px; border-left: 1px solid rgba(255,255,255,.2); padding-left: 28px; line-height: 1.5;">
@@ -1384,22 +1384,22 @@
     <div class="risk-step anim" style="--d:400ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">01</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-P2 · Dominio fiscal insuficiente</div>
-        <div class="step-body" style="font-size: 25px;">Dedicar una fase de formación interna a IVA, IRPF, retenciones y VERIFACTU antes de arrancar los módulos fiscales. Añadir margen explícito en la estimación para facturación e informes.</div>
+        <div class="step-label" style="font-size: 20px;">R-P2 · Dominio fiscal insuficiente</div>
+        <div class="step-body" style="font-size: 28px;">Dedicar una fase de formación interna a IVA, IRPF, retenciones y VERIFACTU antes de arrancar los módulos fiscales. Añadir margen explícito en la estimación para facturación e informes.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:530ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">02</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-H1 · Código generado por IA inseguro</div>
-        <div class="step-body" style="font-size: 25px;">Norma de equipo: todo código IA se revisa en detalle antes de cualquier commit. Instalar análisis estático para detectar patrones inseguros de forma automática.</div>
+        <div class="step-label" style="font-size: 20px;">R-H1 · Código generado por IA inseguro</div>
+        <div class="step-body" style="font-size: 28px;">Norma de equipo: todo código IA se revisa en detalle antes de cualquier commit. Instalar análisis estático para detectar patrones inseguros de forma automática.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:660ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">03</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-E1 · Subestimación del esfuerzo en VERIFACTU</div>
-        <div class="step-body" style="font-size: 25px;">Tomar como referencia la estimación conservadora — Puntos de Objeto, 25 personas-mes — no la Ley de Parkinson. Documentar explícitamente las hipótesis de cada técnica.</div>
+        <div class="step-label" style="font-size: 20px;">R-E1 · Subestimación del esfuerzo en VERIFACTU</div>
+        <div class="step-body" style="font-size: 28px;">Tomar como referencia la estimación conservadora — Puntos de Objeto, 25 personas-mes — no la Ley de Parkinson. Documentar explícitamente las hipótesis de cada técnica.</div>
       </div>
     </div>
   </div>
@@ -1415,22 +1415,22 @@
     <div class="risk-step anim" style="--d:400ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">01</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-P2 · Dominio fiscal insuficiente</div>
-        <div class="step-body" style="font-size: 25px;">Asignar dos miembros responsables del dominio fiscal para contrastarse mutuamente. Diseñar pruebas con casos reales — IVA reducido, retenciones, operaciones intracomunitarias — para detectar errores antes de la entrega.</div>
+        <div class="step-label" style="font-size: 20px;">R-P2 · Dominio fiscal insuficiente</div>
+        <div class="step-body" style="font-size: 28px;">Asignar dos miembros responsables del dominio fiscal para contrastarse mutuamente. Diseñar pruebas con casos reales — IVA reducido, retenciones, operaciones intracomunitarias — para detectar errores antes de la entrega.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:530ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">02</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-H1 · Código generado por IA inseguro</div>
-        <div class="step-body" style="font-size: 25px;">Revisión de código obligatoria entre dos miembros antes de mergear cualquier rama con código IA. Pruebas unitarias sobre todo código IA que afecte a cálculos financieros, autenticación o facturas.</div>
+        <div class="step-label" style="font-size: 20px;">R-H1 · Código generado por IA inseguro</div>
+        <div class="step-body" style="font-size: 28px;">Revisión de código obligatoria entre dos miembros antes de mergear cualquier rama con código IA. Pruebas unitarias sobre todo código IA que afecte a cálculos financieros, autenticación o facturas.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:660ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">03</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-E1 · Subestimación del esfuerzo en VERIFACTU</div>
-        <div class="step-body" style="font-size: 25px;">Revisar al cierre de cada iteración la desviación entre esfuerzo estimado y real en módulos fiscales. Si crece, ajustar estimaciones y reasignar tareas a los miembros con mayor avance.</div>
+        <div class="step-label" style="font-size: 20px;">R-E1 · Subestimación del esfuerzo en VERIFACTU</div>
+        <div class="step-body" style="font-size: 28px;">Revisar al cierre de cada iteración la desviación entre esfuerzo estimado y real en módulos fiscales. Si crece, ajustar estimaciones y reasignar tareas a los miembros con mayor avance.</div>
       </div>
     </div>
   </div>
@@ -1446,22 +1446,22 @@
     <div class="risk-step anim" style="--d:400ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">01</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-P2 · Errores graves en cálculos fiscales</div>
-        <div class="step-body" style="font-size: 25px;">Paralizar la entrega del módulo afectado y revisar la lógica con fuentes normativas oficiales. Si afecta a módulos ya entregados, emitir versión correctiva y notificar al profesor.</div>
+        <div class="step-label" style="font-size: 20px;">R-P2 · Errores graves en cálculos fiscales</div>
+        <div class="step-body" style="font-size: 28px;">Paralizar la entrega del módulo afectado y revisar la lógica con fuentes normativas oficiales. Si afecta a módulos ya entregados, emitir versión correctiva y notificar al profesor.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:530ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">02</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-H1 · Vulnerabilidades de IA en producción</div>
-        <div class="step-body" style="font-size: 25px;">Aislar el módulo, evaluar el alcance y reescribirlo manualmente con revisión exhaustiva. Si afecta a datos fiscales o credenciales, notificar la brecha según RGPD y SECU_LOG.</div>
+        <div class="step-label" style="font-size: 20px;">R-H1 · Vulnerabilidades de IA en producción</div>
+        <div class="step-body" style="font-size: 28px;">Aislar el módulo, evaluar el alcance y reescribirlo manualmente con revisión exhaustiva. Si afecta a datos fiscales o credenciales, notificar la brecha según RGPD y SECU_LOG.</div>
       </div>
     </div>
     <div class="risk-step anim" style="--d:660ms; padding: 26px 0; grid-template-columns: 96px 1fr; gap: 32px;">
       <div class="step-n" style="font-size: 68px;">03</div>
       <div>
-        <div class="step-label" style="font-size: 17px;">R-E1 · Desviación crítica en esfuerzo VERIFACTU</div>
-        <div class="step-body" style="font-size: 25px;">Priorizar FACT_E_VER, ingresos, gastos e IVA. Posponer informes avanzados y dashboards. Renegociar alcance con el profesor para garantizar la entrega en plazo.</div>
+        <div class="step-label" style="font-size: 20px;">R-E1 · Desviación crítica en esfuerzo VERIFACTU</div>
+        <div class="step-body" style="font-size: 28px;">Priorizar FACT_E_VER, ingresos, gastos e IVA. Posponer informes avanzados y dashboards. Renegociar alcance con el profesor para garantizar la entrega en plazo.</div>
       </div>
     </div>
   </div>
@@ -1604,7 +1604,7 @@
 
   <h1 class="h1 rule anim" style="--d:100ms; margin-top: 40px; font-size: 56px;">Tres niveles de planificación: <span style="color:var(--brand);">refinamiento progresivo</span></h1>
 
-  <div class="levels-row anim" style="--d:350ms; margin-top: 44px;">
+  <div class="levels-row anim" style="--d:350ms; margin-top: 24px;">
     <div class="level-card paper-bg">
       <div class="level-tag">Plantilla</div>
       <div class="level-num">91</div>
@@ -1649,7 +1649,7 @@
     </div>
   </div>
 
-  <div class="anim" style="--d:800ms; margin-top: 28px; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--gold-deep); letter-spacing: .02em;">
+  <div class="anim" style="--d:800ms; margin-top: 12px; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--gold-deep); letter-spacing: .02em;">
     Refinamiento progresivo →
   </div>
 
@@ -1672,7 +1672,7 @@
     <div class="timeline-mark"><div class="dot"></div><div class="date">8 jun</div></div>
   </div>
 
-  <table class="t anim" style="--d:480ms; margin-top: 16px; font-size: 19px;">
+  <table class="t anim" style="--d:480ms; margin-top: 16px; font-size: 22px;">
     <thead><tr>
       <th style="width:14%;">Fase</th>
       <th style="width:10%;">Iteración</th>
